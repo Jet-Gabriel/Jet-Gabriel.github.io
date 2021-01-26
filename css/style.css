@@ -5085,6 +5085,7 @@ html [class*='section-'].section-bottom-0 {
 .section-intro > * {
 	position: relative;
 	z-index: 2;
+
 }
 
 .section-intro .intro-bg {
@@ -5093,7 +5094,7 @@ html [class*='section-'].section-bottom-0 {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: .1;
+	opacity: .85;
 }
 
 .section-intro h1 {
