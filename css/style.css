@@ -734,8 +734,12 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .pricing-box {
-	padding: 60px 55px 70px 55px;
+	padding: 10px 10px 10px 10px;
 	text-align: center;
+}
+
+.pricing-box img{
+	width: 55%;
 }
 
 .pricing-box hr {
@@ -748,26 +752,6 @@ a[href*='tel'], a[href*='mailto'] {
 	letter-spacing: .16em;
 	text-transform: uppercase;
 	font-weight: 400;
-	line-height: 1;
-}
-
-.pricing-box-inner {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
-	margin-top: 20px;
-}
-
-.pricing-box-symbol {
-	font-size: 30px;
-	margin-right: 5px;
-	line-height: 1;
-}
-
-.pricing-box-price {
-	font-size: 60px;
 	line-height: 1;
 }
 
@@ -4245,13 +4229,12 @@ textarea.form-input {
 /** @section Banner */
 .section-banner {
 	display: block;
-	background-position: center right;
-	background-size: cover;
 }
 
 .section-banner img {
-	max-width: 100%;
-	height: auto;
+	width: 250px;
+	height: 350px;
+	padding-top: 10px;
 }
 
 /*
@@ -5056,7 +5039,7 @@ html [class*='section-'].section-bottom-0 {
 .custom-section {
 	padding-top: 60px;
 	padding-bottom: 30px;
-	height: 780px;
+	height: 680px;
 }
 
 @media (min-width: 768px) {
@@ -8793,3 +8776,73 @@ html.rd-navbar-fixed-linked .page {
 	top: 24%;
 	left: 19.5%;
 }
+
+/* SlideShow */
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	background: radial-gradient(circle, rgba(214,214,214,0.3841911764705882) 54%, rgba(59,59,57,0.2805497198879552) 86%);
+  }
+  
+  /* Slides */
+  .mySlides {
+	display: none;
+	padding: 80px;
+	text-align: center;
+	height: 550px;
+  }
+     
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+	text-align: center;
+	padding: 20px;
+	background: radial-gradient(circle, rgba(214,214,214,0.3841911764705882) 54%, rgba(59,59,57,0.2805497198879552) 86%);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
